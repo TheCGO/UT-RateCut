@@ -1,0 +1,12 @@
+name: ut-ratecut-dev
+channels:
+- conda-forge
+dependencies:
+- python>=3.9, <3.11
+- ipython
+- jupyter
+- numpy
+- pandas>=1.4.4
+- openpyxl
+- bokeh
+- matplotlib
