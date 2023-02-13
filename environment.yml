@@ -2,7 +2,7 @@ name: ut-ratecut-dev
 channels:
 - conda-forge
 dependencies:
-- python>=3.9, <3.11
+- python=3.9
 - ipython
 - jupyter
 - numpy
