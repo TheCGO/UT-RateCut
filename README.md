@@ -3,7 +3,18 @@ This repository contains the data and code for the analyses in the *Research in 
 
 ## Files and directories in the repository
 This repository contains the following items:
-* [`UT_RateCut.ipynb` Jupyter notebook](UT_RateCut.ipynb). An executable notebook you can use to replicate all the analyses in the article and creation of output and figures. You can either clone or download this repository and run the `UT_RateCut.ipynb` notbook on your machine locally. Or you can [open it in Google Colab](https://colab.research.google.com/drive/1zDjvfUdIfxA8piAHBJwceslVoRzspKBO?usp=sharing) and run the notebook from your browser in which all the software and computation is hosted in the cloud.
+* [`UT_RateCut.ipynb` Jupyter notebook](UT_RateCut.ipynb). An executable notebook you can use to replicate all the analyses in the article and creation of output and figures. You can either clone or download this repository and run the `UT_RateCut.ipynb` notbook on your machine locally. Or you can [open it in Google Colab](https://colab.research.google.com/drive/1zDjvfUdIfxA8piAHBJwceslVoRzspKBO?usp=sharing) and run the notebook from your browser in which all the software and computation is hosted in the cloud. To run this notebook locally on your machine, do the following steps:
+    * Fork and clone (or download) the https://github.com/TheCGO/UT-RateCut repository
+    * In your computer's terminal, navigate to the directory of the `UT-RateCut` repository on your local machine.
+    * Create the conda environment `ut-ratecut-dev` by typing the following command: `conda env create -f environment.yml`
+    * Activate the `ut-ratecut-dev` conda environment by typing the following command: `conda activate ut-ratecut-dev`
+    * Fork and clode (or download) the https://github.com/TheCGO/fiscalsim-us repository.
+    * With the `ut-ratecut-dev` conda environment activated, navigate to the folder of the `fiscalsim-us` repository on your local machine.
+    * With the `ut-ratecut-dev` conda environment activated, install the `fiscalsim-us` package into this conda environment by typing the following command:
+        * For Mac OS: `pip install -e .'[dev]'`
+        * For Windows: `pip install -e ."[dev]"`
+        * For Linux: `pip install -e .`
+    * This should allow your notebook to run while this conda environment is activated.
 * [`/images/` directory](images/). This folder contains the `.html` files for teh dynamic visualizations in the paper and created in the notebook and the corresponding static `.png` image files.
 * [`/data/` directory](data/). This directory contains the data used in the analyses in the article--PEW total balances and rainy day fund balances historical data for all 50 states.
     * [`/data/calculations.xlsx`](/data/calculations.xlsx).
